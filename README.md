@@ -1,6 +1,6 @@
 # Object Tracking with Euclidean Distance Tracker
 
-This Python script demonstrates object tracking using the Euclidean Distance Tracker and OpenCV. It processes a video to detect and track objects in real-time.
+### This Python script demonstrates object tracking using the Euclidean Distance Tracker and OpenCV. It processes a video to detect and track objects in real-time.
 
 # Features
 ### Object Detection: Utilizes background subtraction to detect moving objects.
