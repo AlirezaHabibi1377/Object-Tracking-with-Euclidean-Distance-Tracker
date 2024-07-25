@@ -14,5 +14,5 @@ This Python script demonstrates object tracking using the Euclidean Distance Tra
 ### 4. Display: Shows the tracked objects, their IDs, and the original video frames in separate windows.
 
 # Prerequisites
-## Python 3.9
-## OpenCV library (opencv-python)
+### Python 3.9
+### OpenCV library (opencv-python)
