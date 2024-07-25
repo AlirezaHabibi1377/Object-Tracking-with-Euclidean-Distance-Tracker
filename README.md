@@ -8,11 +8,10 @@ This Python script demonstrates object tracking using the Euclidean Distance Tra
 3. Visualization: Displays the detected objects and their IDs in real-time.
 
 # How It Works
-### 1. Initialize: Creates an instance of the Euclidean Distance Tracker and sets up video capture.
-### 2. Object Detection: Applies background subtraction to extract regions of interest (ROIs) and detects objects based on contours.
-### 3. Object Tracking: Updates object positions and assigns IDs using the tracker.
-### 4. Display: Shows the tracked objects, their IDs, and the original video frames in separate windows.
+1. Initialize: Creates an instance of the Euclidean Distance Tracker and sets up video capture.
+2. Object Detection: Applies background subtraction to extract regions of interest (ROIs) and detects objects based on contours.
+3. Object Tracking: Updates object positions and assigns IDs using the tracker.
+4. Display: Shows the tracked objects, their IDs, and the original video frames in separate windows.
 
 # Prerequisites
-### Python 3.9
-### OpenCV library (opencv-python)
+Python 3.9 & OpenCV library (opencv-python)
