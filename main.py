@@ -13,6 +13,13 @@ cap = cv2.VideoCapture(highway)
 # Object detection from a stable camera using Background Subtraction
 object_detector = cv2.createBackgroundSubtractorMOG2(history=100, varThreshold=40)
 
+# Get the video frame width and height
+frame_width = int(cap.get(3))
+frame_height = int(cap.get(4))
+
+# Define the codec and create VideoWriter object
+out = cv2.VideoWriter('output.avi', cv2.VideoWriter_fourcc('M','J','P','G'), 10, (frame_width, frame_height))
+
 while True:
     ret, frame = cap.read() # Read a frame from the video
     if not ret:
@@ -52,8 +59,15 @@ while True:
         # Draw the bounding box around the object
         cv2.rectangle(roi, (x, y), (x + w, y + h), (0, 255, 0), 3)
 
+
+    # Place the modified ROI back into the original frame
+    frame[340:720, 500:800] = roi
+
+    # Write the frame into the file 'output.avi'
+    out.write(frame)
+
     # Display the ROI, the original frame, and the binary mask
-    cv2.imshow("roi", roi)
+    cv2.imshow("ROI", roi)
     cv2.imshow("Frame", frame)
     cv2.imshow("Mask", mask)
 
