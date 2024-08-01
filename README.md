@@ -15,6 +15,3 @@ This Python script demonstrates object tracking using the Euclidean Distance Tra
 
 # Prerequisites
 Python 3.9 & OpenCV library (opencv-python)
-
-# Output
-Please take a look at 
