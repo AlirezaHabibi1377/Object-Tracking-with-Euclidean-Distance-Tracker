@@ -52,13 +52,16 @@ while True:
         # Draw the bounding box around the object
         cv2.rectangle(roi, (x, y), (x + w, y + h), (0, 255, 0), 3)
 
+    # Display the ROI, the original frame, and the binary mask
     cv2.imshow("roi", roi)
     cv2.imshow("Frame", frame)
     cv2.imshow("Mask", mask)
 
+    # Wait for 30 milliseconds and check if the user pressed the 'Esc' key
     key = cv2.waitKey(30)
     if key == 27:
-        break
+        break # Exit the loop if the 'Esc' key is pressed
 
+# Release the video capture object and close all OpenCV windows
 cap.release()
 cv2.destroyAllWindows()
